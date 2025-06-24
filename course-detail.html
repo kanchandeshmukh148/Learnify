@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details - LearnHub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation (same as index.html) -->
+    <nav class="navbar">
+        <!-- Copy from index.html -->
+    </nav>
+
+    <!-- Course Details -->
+    <section class="course-details">
+        <div class="container">
+            <div class="course-main">
+                <div class="course-image">
+                    <img src="images/web-dev.jpeg" alt="Course Image" id="courseDetailImage">
+                </div>
+                <div class="course-info">
+                    <h1 id="courseDetailTitle">Web Development Bootcamp</h1>
+                    <div class="course-meta">
+                        <span class="instructor" id="courseInstructor">Instructor: John Doe</span>
+                        <span class="rating" id="courseRating"><i class="fas fa-star"></i> 4.8</span>
+                        <span class="students"><i class="fas fa-users"></i> 1,245 students</span>
+                    </div>
+                    <div class="course-price" id="coursePrice">$199</div>
+                    <p class="course-description" id="courseDescription">
+                        Learn full-stack web development with HTML, CSS, JavaScript, and Node.js. 
+                        This comprehensive course will take you from beginner to job-ready developer.
+                    </p>
+                    <button class="btn btn-primary btn-enroll">Enroll Now</button>
+                    <div class="course-features">
+                        <div class="feature">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certificate of Completion</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <span>30 hours of content</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Access on mobile</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="course-tabs">
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="overview">Overview</button>
+                    <button class="tab-btn" data-tab="curriculum">Curriculum</button>
+                    <button class="tab-btn" data-tab="instructor">Instructor</button>
+                    <button class="tab-btn" data-tab="reviews">Reviews</button>
+                </div>
+                
+                <div class="tab-content active" id="overview">
+                    <h3>About This Course</h3>
+                    <p id="courseLongDescription">
+                        This comprehensive web development bootcamp covers everything you need to know to become a full-stack developer. 
+                        You'll learn HTML, CSS, JavaScript, Node.js, Express, and MongoDB to build modern web applications.
+                    </p>
+                    <h3>What You'll Learn</h3>
+                    <ul class="learning-list">
+                        <li><i class="fas fa-check"></i> Build responsive websites with HTML and CSS</li>
+                        <li><i class="fas fa-check"></i> Create interactive web applications with JavaScript</li>
+                        <li><i class="fas fa-check"></i> Develop server-side applications with Node.js</li>
+                        <li><i class="fas fa-check"></i> Work with databases using MongoDB</li>
+                        <li><i class="fas fa-check"></i> Deploy your applications to the web</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-content" id="curriculum">
+                    <h3>Course Curriculum</h3>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <span>Section 1: HTML Fundamentals</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="accordion-content">
+                                <ul class="lecture-list">
+                                    <li><i class="far fa-play-circle"></i> Introduction to HTML (15 min)</li>
+                                    <li><i class="far fa-play-circle"></i> HTML Elements and Tags (20 min)</li>
+                                    <li><i class="far fa-play-circle"></i> Forms and Inputs (25 min)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- More sections would go here -->
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="instructor">
+                    <div class="instructor-profile">
+                        <img src="images/avatar.png" alt="Instructor">
+                        <div class="instructor-info">
+                            <h3 id="instructorName">John Doe</h3>
+                            <span class="title">Senior Web Developer</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.8 Instructor Rating</span>
+                            </div>
+                            <p id="instructorBio">
+                                John has over 10 years of experience in web development. He has worked with major tech companies 
+                                and helped thousands of students learn to code through his courses.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="reviews">
+                    <h3>Student Reviews</h3>
+                    <div class="review">
+                        <div class="reviewer">
+                            <img src="images/student1.jpeg" alt="Student">
+                            <div class="reviewer-info">
+                                <h4>Sarah Johnson</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-text">
+                            This course completely transformed my career. The instructor explains complex concepts in 
+                            an easy-to-understand way. Highly recommended!
+                        </p>
+                    </div>
+                    <!-- More reviews would go here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="footer">
+        <!-- Copy from index.html -->
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/courses.js"></script>
+</body>
+</html>

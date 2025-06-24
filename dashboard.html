@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - LearnHub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation (modified for dashboard) -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">LearnHub</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="#" class="active">Dashboard</a>
+                <div class="user-menu">
+                    <img src="images/avatar.png" alt="User" class="user-avatar">
+                    <div class="dropdown">
+                        <a href="dashboard.html">My Profile</a>
+                        <a href="#">My Courses</a>
+                        <a href="#">Settings</a>
+                        <a href="#" id="logoutBtn">Logout</a>
+                    </div>
+                </div>
+            </div>
+            <button class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Dashboard -->
+    <section class="dashboard">
+        <div class="container">
+            <div class="dashboard-grid">
+                <!-- Sidebar -->
+                <div class="dashboard-sidebar">
+                    <div class="user-profile">
+                        <img src="images/avatar.png" alt="User" class="profile-avatar">
+                        <h3 class="profile-name">John Smith</h3>
+                        <p class="profile-email">john@example.com</p>
+                    </div>
+                    <ul class="sidebar-menu">
+                        <li><a href="#" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                        <li><a href="#"><i class="fas fa-book"></i> My Courses</a></li>
+                        <li><a href="#"><i class="fas fa-certificate"></i> Certificates</a></li>
+                        <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                        <li><a href="#" id="sidebarLogout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Main Content -->
+                <div class="dashboard-content">
+                    <h2>Welcome back, John!</h2>
+                    
+                    <!-- Progress Overview -->
+                    <div class="dashboard-card">
+                        <h3>Your Learning Progress</h3>
+                        <div class="progress-stats">
+                            <div class="progress-item">
+                                <div class="progress-circle" data-percent="75">
+                                    <svg class="progress-ring" width="80" height="80">
+                                        <circle class="progress-ring-circle" stroke-width="8" fill="transparent" r="36" cx="40" cy="40"/>
+                                    </svg>
+                                    <span class="progress-text">75%</span>
+                                </div>
+                                <span>Overall Completion</span>
+                            </div>
+                            <div class="progress-item">
+                                <div class="progress-circle" data-percent="90">
+                                    <svg class="progress-ring" width="80" height="80">
+                                        <circle class="progress-ring-circle" stroke-width="8" fill="transparent" r="36" cx="40" cy="40"/>
+                                    </svg>
+                                    <span class="progress-text">90%</span>
+                                </div>
+                                <span>Web Dev Course</span>
+                            </div>
+                            <div class="progress-item">
+                                <div class="progress-circle" data-percent="50">
+                                    <svg class="progress-ring" width="80" height="80">
+                                        <circle class="progress-ring-circle" stroke-width="8" fill="transparent" r="36" cx="40" cy="40"/>
+                                    </svg>
+                                    <span class="progress-text">50%</span>
+                                </div>
+                                <span>Data Science</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Current Courses -->
+                    <div class="dashboard-card">
+                        <h3>Your Courses</h3>
+                        <div class="user-courses">
+                            <div class="user-course">
+                                <img src="images/web-dev.jpeg" alt="Course">
+                                <div class="course-details">
+                                    <h4>Web Development Bootcamp</h4>
+                                    <div class="course-progress">
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 90%"></div>
+                                        </div>
+                                        <span>90% Complete</span>
+                                    </div>
+                                    <a href="#" class="btn btn-outline">Continue Learning</a>
+                                </div>
+                            </div>
+                            <div class="user-course">
+                                <img src="images/data-science.jpeg" alt="Course">
+                                <div class="course-details">
+                                    <h4>Data Science Fundamentals</h4>
+                                    <div class="course-progress">
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 50%"></div>
+                                        </div>
+                                        <span>50% Complete</span>
+                                    </div>
+                                    <a href="#" class="btn btn-outline">Continue Learning</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Recommended Courses -->
+                    <div class="dashboard-card">
+                        <h3>Recommended For You</h3>
+                        <div class="recommended-courses">
+                            <div class="course-card">
+                                <img src="images/mobile-dev.jpeg" alt="Course">
+                                <h4>Mobile App Development</h4>
+                                <p>Build cross-platform mobile apps with React Native</p>
+                                <a href="course-detail.html" class="btn btn-primary">View Course</a>
+                            </div>
+                            <div class="course-card">
+                                <img src="images/ui-ux.jpeg" alt="Course">
+                                <h4>UI/UX Design Principles</h4>
+                                <p>Master the fundamentals of user interface and experience design</p>
+                                <a href="course-detail.html" class="btn btn-primary">View Course</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="footer">
+        <!-- Copy from index.html -->
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
